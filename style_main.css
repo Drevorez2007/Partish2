@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'TT Lakes';
+  height: 1024px;
+  width: 320px;
+}
+
+.header {
+  height: 88px;
+  background-color: #FFFFFF;
+
+}
+
+.header__content {
+
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  min-width: 320px;
+}
+.logo {
+  padding-right: 50px;
+
+
+}
+.red-button {
+  background-color: #FF3E79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-top: 24px ;
+  margin-bottom: 24px;
+  margin-left:24px;
+  margin-right:16px;
+
+}
+.red-button:hover{
+  opacity: 0.5;
+  transition-duration: 1s;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.red-button + .red-button {
+  margin-top: 24px ;
+  margin-bottom: 24px;
+  margin-left: 0px;
+  margin-right:16px;
+  
+}
+
+.icon {
+  position: relative;
+}
+.icon::before {
+content: '';
+position: absolute;
+background-repeat: no-repeat;
+
+top: -9px;
+left: -10px;
+
+}
+
+.icon-сancel::before {
+  background-image: url(images/cancel.svg);
+  width: 17px;
+  height: 17px;
+
+}
+
+.icon-research::before {
+  background-image: url(images/research.svg);
+  width: 17px;
+  height: 17px;
+
+
+}
+.icon-call::before {
+  background-image: url(images/call.svg);
+  width: 18px;
+  height: 18px;
+
+}
+
+.icon-massage::before {
+background-image: url(/images/massage.svg);
+width: 20px;
+height: 17px;
+}
+
+.icon-person::before {
+  background-image: url(images/person.svg);
+  width: 19px;
+  height: 17px;
+
+}
+
+.nav-aside {
+
+font-family:"TT Lakes";
+font-size: 16px;
+min-width: 222px;
+
+}
+
+.nav-aside .nav-asideitem--active {
+  color: #7E7E82;
+
+}
+
+.nav-asideitem--active::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top:-5px;
+  width: 4px;
+  height: 32px;
+  background-color:#41F6D7;
+  border-radius: 12px;
+
+}
+
+.nav-asideitem {
+  position: relative;
+  color:#1B1C21;
+  font-size: 16px;
+  margin-left: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-aside {
+padding-top:268px;
+
+}
+.footer-aside__btn {
+  display: flex;
+ 
+
+}
+
+.mail {
+  display: block;
+padding-left: 24px;
+margin-bottom:12px;
+color:#1B1C21;
+text-decoration: none;
+
+}
+
+.phone {
+  padding-left: 24px;
+  margin-top:12px;
+  font-size: 24px;
+  color:#1B1C21;
+  text-decoration: none;
+}
+
+.languages {
+  padding-left: 24px;
+  padding-top: 40px;
+}
+.languages__button {
+  color:#1B1C21;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+}
+
+
+.languages__button--active {
+  color: #7E7E82;
+  
+}
